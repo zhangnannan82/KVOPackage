@@ -13,6 +13,8 @@
 		6D8C3CD02116DC630016A7B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D8C3CCF2116DC630016A7B8 /* Assets.xcassets */; };
 		6D8C3CD32116DC630016A7B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D8C3CD12116DC630016A7B8 /* LaunchScreen.storyboard */; };
 		6D8C3CD62116DC630016A7B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8C3CD52116DC630016A7B8 /* main.m */; };
+		6D8C3CDE2116E1680016A7B8 /* nnNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8C3CDD2116E1680016A7B8 /* nnNextViewController.m */; };
+		6D8C3CE22116E3360016A7B8 /* NSObject+NNKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8C3CE12116E3360016A7B8 /* NSObject+NNKVO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		6D8C3CD22116DC630016A7B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D8C3CD42116DC630016A7B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D8C3CD52116DC630016A7B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6D8C3CDC2116E1680016A7B8 /* nnNextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nnNextViewController.h; sourceTree = "<group>"; };
+		6D8C3CDD2116E1680016A7B8 /* nnNextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nnNextViewController.m; sourceTree = "<group>"; };
+		6D8C3CE02116E3360016A7B8 /* NSObject+NNKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NNKVO.h"; sourceTree = "<group>"; };
+		6D8C3CE12116E3360016A7B8 /* NSObject+NNKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NNKVO.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 				6D8C3CC72116DC630016A7B8 /* AppDelegate.m */,
 				6D8C3CC92116DC630016A7B8 /* ViewController.h */,
 				6D8C3CCA2116DC630016A7B8 /* ViewController.m */,
+				6D8C3CDC2116E1680016A7B8 /* nnNextViewController.h */,
+				6D8C3CDD2116E1680016A7B8 /* nnNextViewController.m */,
+				6D8C3CDF2116E3150016A7B8 /* NNKVO */,
 				6D8C3CCC2116DC630016A7B8 /* Main.storyboard */,
 				6D8C3CCF2116DC630016A7B8 /* Assets.xcassets */,
 				6D8C3CD12116DC630016A7B8 /* LaunchScreen.storyboard */,
@@ -69,6 +78,15 @@
 				6D8C3CD52116DC630016A7B8 /* main.m */,
 			);
 			path = KVOPackage;
+			sourceTree = "<group>";
+		};
+		6D8C3CDF2116E3150016A7B8 /* NNKVO */ = {
+			isa = PBXGroup;
+			children = (
+				6D8C3CE02116E3360016A7B8 /* NSObject+NNKVO.h */,
+				6D8C3CE12116E3360016A7B8 /* NSObject+NNKVO.m */,
+			);
+			name = NNKVO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +162,9 @@
 			files = (
 				6D8C3CCB2116DC630016A7B8 /* ViewController.m in Sources */,
 				6D8C3CD62116DC630016A7B8 /* main.m in Sources */,
+				6D8C3CE22116E3360016A7B8 /* NSObject+NNKVO.m in Sources */,
 				6D8C3CC82116DC630016A7B8 /* AppDelegate.m in Sources */,
+				6D8C3CDE2116E1680016A7B8 /* nnNextViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

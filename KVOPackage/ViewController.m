@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "nnNextViewController.h"
 
 @interface ViewController ()
 
@@ -17,8 +18,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.navigationItem.title = @"首页";
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.backgroundColor = [UIColor redColor];
+    btn.frame = CGRectMake(100, 150, 100, 100);
+    [btn addTarget:self action:@selector(naxtpage:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
 }
 
+- (void)naxtpage:(UIButton *)button {
+    nnNextViewController *nextVC = [[nnNextViewController alloc] init];
+    [self presentViewController:nextVC animated:YES completion:^{
+        
+    }];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
