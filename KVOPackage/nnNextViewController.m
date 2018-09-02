@@ -7,8 +7,13 @@
 //
 
 #import "nnNextViewController.h"
+//#import "NSObject+NNKVO.h"
+#import "NSObject+NNNewKVO.h"
+#import "Person.h"
 
 @interface nnNextViewController ()
+
+//@property (nonatomic, strong) Person *person;
 
 @end
 
@@ -18,26 +23,31 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"第二个";
+    self.view.backgroundColor = [UIColor whiteColor];
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.backgroundColor = [UIColor blueColor];
     btn.frame = CGRectMake(100, 150, 100, 100);
+    [btn addTarget:self action:@selector(popAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    Person *person = [[Person alloc] init];
+    [self nnObserver:person keyPath:@"name" block:^{
+        NSLog(@"good!!");
+    }];
+//    [person nnObserver:self keyPath:@"name" block:^{
+//        NSLog(@"good");
+//    }];
+    person.name = @"122";
+}
+
+- (void)popAction {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

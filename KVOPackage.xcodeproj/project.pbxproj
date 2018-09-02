@@ -15,6 +15,8 @@
 		6D8C3CD62116DC630016A7B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8C3CD52116DC630016A7B8 /* main.m */; };
 		6D8C3CDE2116E1680016A7B8 /* nnNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8C3CDD2116E1680016A7B8 /* nnNextViewController.m */; };
 		6D8C3CE22116E3360016A7B8 /* NSObject+NNKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8C3CE12116E3360016A7B8 /* NSObject+NNKVO.m */; };
+		E26CEB0721357380002E75F5 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CEB0621357380002E75F5 /* Person.m */; };
+		E26CED3D213BD368002E75F5 /* NSObject+NNNewKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CED3C213BD368002E75F5 /* NSObject+NNNewKVO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		6D8C3CDD2116E1680016A7B8 /* nnNextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nnNextViewController.m; sourceTree = "<group>"; };
 		6D8C3CE02116E3360016A7B8 /* NSObject+NNKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NNKVO.h"; sourceTree = "<group>"; };
 		6D8C3CE12116E3360016A7B8 /* NSObject+NNKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NNKVO.m"; sourceTree = "<group>"; };
+		E26CEB0521357380002E75F5 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		E26CEB0621357380002E75F5 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		E26CED3B213BD368002E75F5 /* NSObject+NNNewKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NNNewKVO.h"; sourceTree = "<group>"; };
+		E26CED3C213BD368002E75F5 /* NSObject+NNNewKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NNNewKVO.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,8 @@
 				6D8C3CCA2116DC630016A7B8 /* ViewController.m */,
 				6D8C3CDC2116E1680016A7B8 /* nnNextViewController.h */,
 				6D8C3CDD2116E1680016A7B8 /* nnNextViewController.m */,
+				E26CEB0521357380002E75F5 /* Person.h */,
+				E26CEB0621357380002E75F5 /* Person.m */,
 				6D8C3CDF2116E3150016A7B8 /* NNKVO */,
 				6D8C3CCC2116DC630016A7B8 /* Main.storyboard */,
 				6D8C3CCF2116DC630016A7B8 /* Assets.xcassets */,
@@ -85,6 +93,8 @@
 			children = (
 				6D8C3CE02116E3360016A7B8 /* NSObject+NNKVO.h */,
 				6D8C3CE12116E3360016A7B8 /* NSObject+NNKVO.m */,
+				E26CED3B213BD368002E75F5 /* NSObject+NNNewKVO.h */,
+				E26CED3C213BD368002E75F5 /* NSObject+NNNewKVO.m */,
 			);
 			name = NNKVO;
 			sourceTree = "<group>";
@@ -160,11 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26CEB0721357380002E75F5 /* Person.m in Sources */,
 				6D8C3CCB2116DC630016A7B8 /* ViewController.m in Sources */,
 				6D8C3CD62116DC630016A7B8 /* main.m in Sources */,
 				6D8C3CE22116E3360016A7B8 /* NSObject+NNKVO.m in Sources */,
 				6D8C3CC82116DC630016A7B8 /* AppDelegate.m in Sources */,
 				6D8C3CDE2116E1680016A7B8 /* nnNextViewController.m in Sources */,
+				E26CED3D213BD368002E75F5 /* NSObject+NNNewKVO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

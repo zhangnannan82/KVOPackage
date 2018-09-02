@@ -11,6 +11,6 @@
 typedef void(^kvoBlock)(void);
 @interface NSObject (NNKVO)
 
-- (void)nnObserver:(NSObject *)observer keyPath:(NSString *)ketPath block:(kvoBlock)block;
+- (void)nnObserver:(NSObject *)observer keyPath:(NSString *)keyPath block:(kvoBlock)block;
 
 @end
